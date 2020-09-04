@@ -8,6 +8,7 @@ export const SUPPORTED_NETWORKS = {
 	1: 'MAINNET',
 	3: 'ROPSTEN',
 	4: 'RINKEBY',
+	20: 'LOCAL',
 	42: 'KOVAN',
 };
 
@@ -29,6 +30,7 @@ export const INFURA_JSON_RPC_URLS = {
 	1: `https://mainnet.infura.io/v3/${INFURA_PROJECT_ID}`,
 	3: `https://ropsten.infura.io/v3/${INFURA_PROJECT_ID}`,
 	4: `https://rinkeby.infura.io/v3/${INFURA_PROJECT_ID}`,
+	20: `http://localhost:8545`,
 	42: `https://kovan.infura.io/v3/${INFURA_PROJECT_ID}`,
 };
 

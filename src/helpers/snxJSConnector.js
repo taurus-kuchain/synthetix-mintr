@@ -1,4 +1,4 @@
-import { SynthetixJs } from 'synthetix-js';
+import { SynthetixJs } from 'synthetix-js-a';
 import {
 	getEthereumNetwork,
 	INFURA_JSON_RPC_URLS,
