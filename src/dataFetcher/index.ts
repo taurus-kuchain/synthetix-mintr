@@ -7,10 +7,10 @@ const DEFAULT_SUSD_RATE = 1;
 
 export const getDebtStatus = async (walletAddress: string) => {
 	const {
-		snxJS: { SynthetixState, Synthetix },
+		snxJS: { SystemSettings, Synthetix },
 	} = snxJSConnector as any;
 	const result = await Promise.all([
-		SynthetixState.issuanceRatio(),
+		SystemSettings.issuanceRatio(),
 		Synthetix.collateralisationRatio(walletAddress),
 		Synthetix.transferableSynthetix(walletAddress),
 		Synthetix.debtBalanceOf(walletAddress, bytesFormatter('sUSD')),
